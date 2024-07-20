@@ -7,7 +7,7 @@ import React from 'react'
 const Polls: React.FC<{ polls: PollStruct[] }> = ({ polls }) => {
   return (
     <div>
-      <h1 className="text-center text-[34px] font-[550px] mb-5">Start Voting</h1>
+      <h1 className="text-center text-[34px] font-[50px] mb-5">Choose a Poll and Cast Your Vote</h1>
 
       <div className="grid grid-cols-1 xl:grid-cols-2 pb-7 gap-[62px] sm:w-2/3 xl:w-5/6 mx-auto">
         {polls.map((poll, i) => (
@@ -70,7 +70,7 @@ const Poll: React.FC<{ poll: PollStruct }> = ({ poll }) => {
             onClick={() => navigate.push('/polls/' + poll.id)}
             className="h-[44px] w-full rounded-full transition-all duration-300 bg-[#1B5CFE] hover:bg-blue-500"
           >
-            Enter
+            Enter Poll and Vote
           </button>
         </div>
       </div>

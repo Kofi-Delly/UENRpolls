@@ -13,7 +13,7 @@ const Navbar = () => {
       px-5 rounded-full"
     >
       <Link href="/" className="text-[20px] text-blue-800 sm:text-[24px]">
-        Dapp<span className="text-white font-bold">Votes</span>
+        Ba<span className="text-white font-bold">ck</span>
       </Link>
       {wallet ? (
         <button
